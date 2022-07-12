@@ -17,11 +17,19 @@ function renderBooks() {
         <i class="fas fa-star-half-alt"></i>
       </div>
       <div class="book__price">
-        <span class="book__price--normal">$${book.originalPrice.toFixed(2)}</span> $${book.salePrice}
+        <span class="">$${book.originalPrice.toFixed(2)}</span>
       </div>
     </div>`});
 
     booksWrapper.innerHTML = booksHTML.join("")
+}
+
+function filterBooks(event) {
+    if (event.target.value === "LOW_TO_HIGH") {
+
+    } else if (event.target.value === "HIGH_TO_LOW") {
+
+    } 
 }
 
 setTimeout( () => {
