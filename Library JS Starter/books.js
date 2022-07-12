@@ -43,8 +43,7 @@ function giveRating(ratings) {
 }
 
 function getLowestPrice(book) {
-  if (book.salePrice === null) return book.originalPrice;
-  else return book.salePrice;
+  return book.salePrice || book.originalPrice
 }
 
 function givePriceString(book) {
