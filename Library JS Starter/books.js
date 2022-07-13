@@ -1,8 +1,8 @@
 
 
-function renderBooks(filter) {
+async function renderBooks(filter) {
   const booksWrapper = document.querySelector('.books');
-  const books = getBooks();
+  const books = await getBooks();
 
   if (filter === "LOW_TO_HIGH") {
     books.sort((a,b) => getLowestPrice(a) - getLowestPrice(b))
