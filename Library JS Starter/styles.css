@@ -469,7 +469,7 @@ select {
 }
 
 .books__loading .books__loading--spinner {
-  display: flex;
+  display: block !important;
 }
 
 .fa-spinner {
