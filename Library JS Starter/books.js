@@ -61,9 +61,9 @@ function filterBooks(event) {
     renderBooks(event.target.value)
 }
 
-setTimeout( () => {
-  renderBooks();
-})
+// setTimeout( () => {
+//   renderBooks();
+// })
 
 // FAKE DATA
 function getBooks() { //this returns an array
